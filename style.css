@@ -1,0 +1,780 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: "EB Garamond", serif;
+}
+body,html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.container-fluid{
+    max-width: 100%;
+    position: relative;
+}
+.container{
+   max-width: 1370px;
+   position: relative;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.col-25{
+    max-width:25%;
+    flex:0 0 25%;
+    padding: 0 15px;
+}
+.col-20{
+    max-width: 20%;
+    flex:0 0 20%;
+    padding: 0 15px;
+}
+.col-60{
+    max-width: 60%;
+    flex:0 0 60%;
+    padding: 0 15px;
+}
+.col-16{
+    max-width: 16.6%;
+    flex:0 0 16.6%;
+    padding: 0 10px;
+
+}
+.w-100{
+    width:100%;
+}
+.navbar.container{
+    max-width: 100%;
+}
+div.image-part{
+    display: flex;
+    padding:26px 55px;
+}
+
+p.brand-name{
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+}
+div.navbar_part{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+.one{
+    position: relative;
+    display: flex;
+    transition: o.5s ease;
+}
+.one li{
+    transition: 0.5s ease-in-out;
+}
+.one li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0 18px;
+    color: black;
+    font-size: 17px;
+}
+.one li a:hover{
+    color: rgb(61, 6, 6);
+    transition: 0.4s ease;
+}
+div.icon_part{
+    padding:12px 66px;
+    display: flex;
+    justify-content: center;  
+}
+div.icon-part_1{
+    font-size: 17px;
+    padding: 0 13px;
+}
+#check,.navbar_part label{
+    display: none;
+}
+#check:checked ~ .one{
+    right:0;
+}
+
+/* ------------------------------------------------------first----------------------------------------------------- */
+.brand-add{
+    position: relative;  
+    width: 100%;
+    background: url("assets/images/Rectangle\ 448.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height:340px ;
+    margin-bottom:120px ;
+}
+.brand-name_part{
+    width:100%;
+    padding:150px 75px ;
+}
+.brand-name_part h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+}
+span.line-change{
+    font-style: italic;
+}
+span.line-change-1{
+    font-style: italic;
+}
+.brand-name_part p{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.brand-name_part button{
+ outline: none;
+ background: transparent;
+ border: 1px solid white;
+ color: white;
+ text-transform: uppercase;
+ font-size: 15px;
+ padding: 10px 8px;
+}
+
+/* ----------------------------------------------------------second-------------------------------------------------------- */
+.band-demo{
+    width: 100%;
+    position: relative;
+    margin-bottom: 132px;
+}
+div.band-demo-1{
+    width:100%;
+   text-align: center; 
+}
+.band-demo-1 p{
+   text-transform: uppercase;
+   margin-bottom: 15px;
+   font-size: 25px; 
+}
+.band-demo-1 h1{
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-family: "EB Garamond", serif;
+}
+img.picture{
+    margin-bottom: 14px;
+    max-width: 100%;
+    height: auto;
+}
+div.text{
+    display: flex;
+}
+.text p{
+    font-size:20px;
+    font-weight: 400;
+   text-transform: uppercase;
+   margin-right: 10px; 
+}
+.text label{
+    font-size: 15px;
+  }
+img.arrow{
+    max-width: 100%;
+    height: auto;
+}
+/* -------------------------------------------------third------------------------------------------------------------ */
+.band-trending{
+    margin-bottom: 110px;
+}
+.band-trending-1{
+    width:100%;
+    text-align: center;
+}
+.band-trending-1 p{
+  text-transform: uppercase; 
+  margin-bottom: 15px; 
+  font-size: 25px;
+}
+.band-trending-1 h1{
+    text-transform: uppercase;
+    font-size:42px ;
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-family: "EB Garamond", serif;
+}
+img.picture-1{
+    margin-bottom: 14px;
+    max-width: 100%;
+    height: auto;
+}
+div.text_part{
+    display: flex;
+    margin-bottom: 18px;
+}
+.text_part p{
+    font-size: 18px;
+}
+div.text-part-1{
+    display: flex;
+    margin-bottom: 20px;
+}
+img.logo{
+    width:7%;
+    margin-right: 5px;
+}
+.text-part-1 p{
+    margin-top: 5px;
+    font-size: 19px;
+    margin-left: 20px;
+}
+.price-tack{
+    font-size: 20px;
+    font-weight: 500;
+}
+/* ---------------------------------------------------fourth------------------------------------------------------- */
+.name-style{
+    display: flex;
+    width:100%;
+    padding: 0 13px;
+}
+.name-style h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-top: 64px; 
+}
+.name-style h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-top: 64px;
+    color: rgba(211,211,211,0.893);
+}
+img.size{
+    max-width: 100%;
+    height: auto;
+}
+.band-name-style{
+    margin-bottom: 90px;
+}
+/* ---------------------------------------------------fiveth------------------------------------------------------- */
+.add-band-part{
+    background: url("assets/images/Rectangle\ 452.png");
+    background-size: cover;
+    background-attachment: center center;
+    background-repeat: no-repeat;
+    min-height: 340px;
+   position: relative;
+}
+.add-band{
+    padding: 0 59px;
+    margin-bottom: 132px;
+}
+div.add-band-unique{
+    margin-top: 340px;
+    margin-left: 50px;
+}
+.add-band-unique h3{
+    font-size: 58px;
+    text-transform: uppercase;
+    color:white;
+    margin-bottom:30px;
+    font-weight: 100;
+}
+.add-band-unique p{
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+} 
+.add-band-unique button{
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 12px;
+    text-transform:uppercase;
+    color:white;
+    padding:10px 8px;
+    margin-bottom: 30px;
+}
+/* -------------------------------------------sixth-------------------------------------------------- */
+div.follow-part p{
+    text-transform: uppercase;
+}
+.follow-part h1{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+img.com-logo{
+   max-width:100%;
+   height:auto;
+}
+.just-follow{
+    margin-bottom: 130px;
+}
+.picture-part{
+    max-width:100%;
+    height:auto;
+}
+.style-change{
+    font-style: italic;
+}
+.image-follow{
+    margin-bottom: 10px;
+}
+/* --------------------------------------------------seventh------------------------------------------------------------ */
+.following-side{
+    width: 100%;
+}
+.follow-name{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.follow-name p{
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: 500;
+  
+}
+.just-us{
+    margin-bottom: 15px;
+}
+.just-us p{
+ text-align: center;
+ text-transform: uppercase;
+}
+.logo-part{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+.logo-part div{
+    margin-left: 7px;
+}
+.part-1{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+}
+ul.footer-menu{
+    list-style-type: none;
+}
+ul.footer-menu>li>a{
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1px;
+    font-style: 16px;
+    white-space: nowrap;
+    color: #656665;
+    font-size: 20px;
+}
+div.part-1 .child-footer{
+    width: calc(20% - 20px);
+    margin: 1px;
+    text-align: center;
+ }
+ .child-footer p{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 12px;
+ }
+ ul.footer-menu{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+ }
+
+ /* -----------------------------------------eight----------------------------------------------------------------------- */
+ /* --------------------------------------------------mediaqurey--------------------------------------------------------------- */
+@media(max-width:1365px){
+    .name-style h2 {
+        font-size: 67px;
+    }
+    .text_part p {
+        font-size: 16px;
+    }
+}
+ @media(max-width:1200px){
+    .text p{
+        font-size: 19px;
+    }
+    .col-25{
+        padding: 0 7px;
+    }
+    .text-part-1 p{
+        font-size: 18px;
+    }
+    .name-style h2 {
+        font-size: 54px;
+    }
+    .one li a{
+        font-size: 13px;
+    }
+    div.navbar_part{
+        width: 80%;
+    }
+ }
+ @media(max-width:1024px){
+    .col-25{
+        max-width:100%;
+        flex:0 0 100%;
+        padding: 20px 0;
+    }
+    div.navbar_part{
+       padding: 0 50px;
+    }
+    img.picture{
+        width: 100%;
+    }
+    .one li a{
+        margin: 0;
+    }
+    p.brand-name {
+        font-size: 38px;
+    }
+    img.picture-1{
+        width: 100%;
+    }
+    .text p{
+        font-size: 28px;
+        margin-left: 10px;
+    }
+    .text_part p {
+        font-size: 29px;
+        margin-left: 12px;
+    }
+    .text-part-1 p {
+        font-size: 26px;
+    }
+    div.text-part-1{
+        margin-left: 12px;
+    }
+    .price-tack {
+        font-size: 34px;
+        margin-left:12px;
+    }
+    .text label {
+        font-size: 21px;
+    }
+   .name-style h2 {
+    font-size: 40px;
+   }
+   .name-style h1 {
+    font-size: 45px;
+   }
+   img.size {
+    max-width: 22%;
+   }
+   .add-band-unique h3 {
+    font-size: 40px;
+   }
+   .col-16{
+    max-width:100%;
+    flex:0 0 100%;
+    padding: 0;
+   }
+   .picture-part{
+    width:100%;
+   }
+   div.follow-part p{
+    font-size: 41px;
+   }
+   .follow-part h1 {
+    font-size: 63px;
+   }
+   .follow-part{
+    margin-left: 30px;
+    width:100%;
+   }
+   div.part-1 .child-footer{
+    width: calc(100% - 20px);
+    margin: 1px;
+ }
+ .follow-name p{
+    font-size: 48px;
+ }
+ .just-us p{
+    font-size: 23px;
+ }
+ .logo-2{
+    width: 6%;
+ }
+ .child-footer p {
+    font-size: 31px;
+ }
+ ul.footer-menu>li>a{
+    font-size: 26px;
+ }
+}
+@media(max-width:991px){
+    .one{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        top:25%;
+        width: 80%;
+        max-width: 300px;
+        height: calc(100vh - 11%);
+        right: -100%;
+        background: brown;
+        z-index: 5;
+    }
+    .one li{
+        background:white;
+        margin: 10px 0;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    .navbar_part label{
+        display: block;
+    }
+    .fa-bars{
+     color: black;
+     position: absolute;
+     top:25px;
+     right: 17px;
+     font-size:25px;
+    }
+    .col-20 .icon_part{
+        display: none;
+       }
+}
+@media(max-width:800px){
+    img.size {
+        max-width: 19%;
+    }
+    .name-style h2 {
+        font-size: 32px;
+    }
+    .name-style h1 {
+        font-size: 36px;
+    }
+    .add-band{
+        padding: 0;
+    }
+}
+ @media(max-width:767px){
+     div.image-part{
+         padding: 12px 30px;
+     }
+     .brand-name_part{
+        padding: 150px 59px;
+     }
+     .one{
+        top:18%;
+     }
+ }
+ @media(max-width:600px){
+    .brand-name_part h1{
+        font-size: 44px;
+    }
+    .name-style h1 {
+        font-size: 30px;
+    }
+    .name-style h2 {
+        font-size: 21px;
+    }
+    .add-band-unique h3 {
+        font-size: 31px;
+    }
+ }
+ @media(max-width:574px){
+    .brand-name_part h1{
+        font-size: 35px;
+    }
+    .band-trending-1 h1{
+        font-size:37px ;
+    }
+    div.follow-part p {
+        font-size: 23px;
+    }
+    .follow-part h1 {
+        font-size: 42px;
+    }
+ }
+ @media(max-width:479px){
+    .brand-name_part{
+        padding: 150px 18px;
+    }
+    div.image-part {
+        padding: 12px 1px;
+ }
+ .band-trending-1 h1{
+    font-size:26px ;
+ }
+ .band-trending-1 p {
+    font-size: 18px;
+ }
+ .band-demo-1 h1{
+    font-size: 26px;
+ }
+ .band-demo-1 p{
+    font-size: 18px;
+ }
+ .text p{
+    font-size: 18px;
+ }
+ .text_part p {
+    font-size: 24px;
+ }
+ .price-tack {
+    font-size: 25px;
+ }
+ .add-band-unique h3 {
+    font-size: 23px;
+ } 
+    .text-part-1 p {
+    font-size: 18px;
+ }
+ p.brand-name {
+    font-size: 26px;
+ }
+ .text label {
+    font-size: 17px;
+ }
+ .brand-name_part p {
+    font-size: 13px;
+ }
+ .brand-name_part button{
+      font-size: 12px;
+ }
+ .add-band-unique p{
+    font-size: 14px;
+ }
+ .one{
+    top:15%;
+ }
+}
+ @media(max-width:419px){
+    .child-footer p {
+        font-size: 19px;
+    }
+    ul.footer-menu>li>a {
+        font-size: 18px;
+    }
+     div.image-part{
+         padding: 12px 0;
+     } 
+     .brand-name_part h1 {
+        font-size: 28px;
+     }
+     .text_part p {
+        font-size: 21px;
+     }
+     .band-trending {
+        margin-bottom: 70px;
+     }
+     div.add-band-unique{
+        margin-left:8px;
+        margin-top: 203px;
+     }
+     .logo-2{
+        width: 11%;
+     }
+     .follow-name p {
+        font-size: 34px;
+     }
+     .just-us p {
+        font-size: 18px;
+     }
+ }
+ @media(max-width:375px){
+    .band-demo-1 h1 {
+        font-size: 21px;
+    }
+    .band-demo-1 p {
+        font-size: 13px;
+    }
+    .add-band-unique h3 {
+        font-size: 24px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .text label {
+        font-size: 13px;
+    }
+    .band-trending-1 h1 {
+        font-size: 21px;
+    }
+    .text_part p {
+        font-size: 18px;
+    }
+    .text-part-1 p {
+        font-size: 18px;
+    }
+    .price-tack {
+        font-size: 20px;
+    }
+    .add-band-unique h3 {
+        font-size: 20px;
+    }
+    .add-band-unique p{
+        font-size: 13px;
+    }
+    div.follow-part p {
+        font-size: 18px;
+    }
+    .follow-part h1 {
+        font-size: 33px;
+    }
+    .child-footer p {
+        font-size: 18px;
+   }
+   ul.footer-menu>li>a {
+    font-size: 15px;
+   }
+   .band-trending-1 p {
+    font-size: 15px;
+   }
+}
+ @media(max-width:329px){
+    .brand-name_part h1 {
+        font-size: 25px;
+    }
+    .brand-name_part p{
+        font-size: 15px;
+    }
+    .brand-name_part button{
+        font-size: 13px;
+    }
+ }
+ @media(max-width:320px){
+    .band-trending-1 h1{
+        font-size: 21px;
+    }
+    img.size {
+        max-width: 31%;
+    }
+    .name-style h2 {
+        font-size: 16px;
+    }
+    .name-style h1 {
+        font-size: 22px;
+    }
+    .brand-name_part p {
+        font-size: 12px;
+    }
+    .brand-name_part button{
+        font-size: 12px;
+    }
+ }
+ 
